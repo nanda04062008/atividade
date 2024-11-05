@@ -1,0 +1,34 @@
+body {
+background-color: #f0f0f0;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.flashcard {
+background-color: #457ea0;
+border: 2px solid #ccc;
+border-radius: 8px;
+width: 200px;
+height: 100px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 10px;
+transition: transform 0.3s;
+}
+.flashcard:hover {
+transform: scale(1.05);
+}
+.frente, .verso {
+display: none;
+width: 100%;
+text-align: center;
+}
+.frente {
+display: block;
+}
